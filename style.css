@@ -1,0 +1,71 @@
+*{ margin: 0;
+padding: 0; }
+
+#show{
+
+    background: orange;
+    border: 0px transparent;
+    border-radius: 20px;
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    transition: 0.5s all ease;
+    z-index: 2;
+
+}
+#show:hover{
+    border: 2px solid orange;
+    background: white;
+}
+#mymod-cont{
+    width: 720px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 10% auto;
+    background: orange;
+    font-size: 22px;
+    animation: ssd 0.2s ease-in;
+
+}
+#mymod{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.5) ;
+    display: none;
+}
+#mymod #hide{
+    float: right;
+    position: relative;
+    top: 35px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 6px 10px 0 22px;
+    border-radius: 15px;
+}
+#mymod #hide:hover{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    border-radius: 10px;
+}
+
+@keyframes ssd{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1); 
+    }
+}
